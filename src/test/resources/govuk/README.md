@@ -1,0 +1,1 @@
+These fixtures are synthetic, shaped like the public GOV.UK Content API. They contain no copied guidance or personal data. The empty withdrawn_notice object reproduces a schema shape observed on active GOV.UK pages on 15 November 2026.
