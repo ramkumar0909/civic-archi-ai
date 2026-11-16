@@ -1,0 +1,51 @@
+sources:
+  - sourceKey: the-technology-code-of-practice
+    path: /guidance/the-technology-code-of-practice
+    topic: technology-code-of-practice
+    enabled: true
+    notes: API checked 2026-11-15; overview excluded because body empty
+  - sourceKey: point-1-understand-user-needs
+    path: /service-manual/service-standard/point-1-understand-user-needs
+    topic: service-standard
+    enabled: true
+    notes: API checked 2026-11-15; overview excluded because body empty
+  - sourceKey: point-10-define-success-publish-performance-data
+    path: /service-manual/service-standard/point-10-define-success-publish-performance-data
+    topic: service-standard
+    enabled: true
+    notes: API checked 2026-11-15; overview excluded because body empty
+  - sourceKey: point-11-choose-the-right-tools-and-technology
+    path: /service-manual/service-standard/point-11-choose-the-right-tools-and-technology
+    topic: service-standard
+    enabled: true
+    notes: API checked 2026-11-15; overview excluded because body empty
+  - sourceKey: point-12-make-new-source-code-open
+    path: /service-manual/service-standard/point-12-make-new-source-code-open
+    topic: service-standard
+    enabled: true
+    notes: API checked 2026-11-15; overview excluded because body empty
+  - sourceKey: point-13-use-common-standards-components-patterns
+    path: /service-manual/service-standard/point-13-use-common-standards-components-patterns
+    topic: service-standard
+    enabled: true
+    notes: API checked 2026-11-15; overview excluded because body empty
+  - sourceKey: point-14-operate-a-reliable-service
+    path: /service-manual/service-standard/point-14-operate-a-reliable-service
+    topic: service-standard
+    enabled: true
+    notes: API checked 2026-11-15; overview excluded because body empty
+  - sourceKey: point-5-make-sure-everyone-can-use-the-service
+    path: /service-manual/service-standard/point-5-make-sure-everyone-can-use-the-service
+    topic: service-standard
+    enabled: true
+    notes: API checked 2026-11-15; overview excluded because body empty
+  - sourceKey: point-8-iterate-and-improve-frequently
+    path: /service-manual/service-standard/point-8-iterate-and-improve-frequently
+    topic: service-standard
+    enabled: true
+    notes: API checked 2026-11-15; overview excluded because body empty
+  - sourceKey: point-9-create-a-secure-service
+    path: /service-manual/service-standard/point-9-create-a-secure-service
+    topic: service-standard
+    enabled: true
+    notes: API checked 2026-11-15; overview excluded because body empty

@@ -1,0 +1,56 @@
+server:
+  address: 127.0.0.1
+  port: ${PORT:8080}
+spring:
+  http:
+    clients:
+      connect-timeout: 5s
+      read-timeout: 60s
+  application:
+    name: civicarch-ai
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/civicarch}
+    username: ${DB_USER:civicarch}
+    password: ${DB_PASSWORD}
+  ai:
+    ollama:
+      base-url: ${OLLAMA_BASE_URL:http://localhost:11434}
+      chat:
+        options:
+          model: ${CHAT_MODEL:qwen3:4b}
+          temperature: 0
+          num-predict: 1024
+      embedding:
+        options:
+          model: ${EMBEDDING_MODEL:nomic-embed-text:v1.5}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never
+      probes:
+        enabled: true
+      group:
+        readiness:
+          include: readinessState,db
+civicarch:
+  sources: ${SOURCES_FILE:config/sources.yml}
+  runtime:
+    similarity-floor: 0.65
+    max-sources: 10
+    prompt-characters: 20000
+    output-characters: 1024
+    concurrent-inference: 2
+    inference-timeout-millis: 60000
+    chunk-words: 280
+    overlap-words: 40
+    request-bytes: 32768
+    embedding-dimensions: 768
+  fetch:
+    attempts: 3
+    interval-millis: 1000
+    connect-timeout-millis: 5000
+    read-timeout-millis: 20000
